@@ -7,6 +7,7 @@ import { formatVariantName } from "../lib/format-variant-name";
 import { PrintfulProduct } from "../types";
 
 import ProductGrid from "../components/ProductGrid";
+import Homepage from "../components/Hompage";
 
 type IndexPageProps = {
   products: PrintfulProduct[];
@@ -19,6 +20,8 @@ const IndexPage: React.FC<IndexPageProps> = ({ products }) => (
         All Products
       </h1>
     </div>
+
+    <Homepage />
 
     <ProductGrid products={products} />
   </>

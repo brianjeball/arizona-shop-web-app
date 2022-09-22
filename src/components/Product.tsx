@@ -36,10 +36,10 @@ const Product = (product) => {
   const onWishlist = isSaved(id);
 
   return (
-    <article className="border border-gray-200 rounded bg-white flex flex-col relative">
+    <article className="bg-black flex flex-col relative">
       <button
         aria-label="Add to wishlist"
-        className="appearance-none absolute top-0 right-0 mt-3 mr-3 text-gray-300 focus:text-gray-500 hover:text-red-500 transition focus:outline-none"
+        className="appearance-none absolute top-0 right-0 mt-3 mr-3 text-white focus:text-white hover:text-red-500 transition focus:outline-none"
         onClick={addToWishlist}
       >
         {onWishlist ? (
@@ -75,7 +75,7 @@ const Product = (product) => {
       </div>
       <div className="flex-1 p-6 pt-0">
         <div className="text-center">
-          <p className="mb-1 font-semibold text-gray-900">{name}</p>
+          <p className="mb-1 font-semibold text-white">{name}</p>
           <p className="text-sm text-gray-500">{formattedPrice}</p>
         </div>
       </div>
