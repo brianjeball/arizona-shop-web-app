@@ -40,11 +40,11 @@ const Homepage = () => {
             margin: '0 12%'}}>
             <div style={{display: 'flex'}}>
               <Image
-                src="/assets/images/pendants/arizona-pendant-bw.png" alt='catch22 cover art' width={700} height={700} />
+                src="/assets/images/pendants/arizona-pendant-bw-min.png" alt='catch22 cover art' width={700} height={700} />
               <Image
-                src="/assets/images/pendants/arizona-pendant.png" alt='catch22 cover art' width={700} height={700} />
+                src="/assets/images/pendants/arizona-pendant-min.png" alt='catch22 cover art' width={700} height={700} />
               <Image
-                src="/assets/images/pendants/arizona-pendant-colorful.png" alt='catch22 cover art' width={700} height={700} />
+                src="/assets/images/pendants/arizona-pendant-colorful-min.png" alt='catch22 cover art' width={700} height={700} />
             </div>
           {/* <div style={{display: 'flex', flexDirection: 'column', padding: '12%', height: 400}}>
             <div className='absolute z-30 center my-0 mx-auto'>

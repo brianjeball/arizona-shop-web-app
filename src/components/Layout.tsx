@@ -16,9 +16,11 @@ const Layout = ({ children }) => {
           <div className="flex items-center justify-between">
 
             <div className="md:w-1/3">
-            <Image
-              src="/jb-logo-white-cropped.png" alt='catch22 cover art' width={300} height={80}
+            <Link href="/">
+              <Image
+                src="/jb-logo-white-cropped.png" alt='catch22 cover art' width={220} height={50}
                 />
+            </Link>
               {/* <nav className="flex items-center justify-start space-x-3 md:space-x-6">
                 <Link href="/about">
                   <a className="text-white hover:text-blue-600 p-1 transition">
@@ -99,7 +101,7 @@ const Layout = ({ children }) => {
               title="Learn more about how this site was made"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-0.5 text-gray-800 hover:text-blue-600"
+              className="ml-0.5 text-gray-600 hover:text-blue-600"
             >
               Big Win Multimedia
             </a>
@@ -109,12 +111,12 @@ const Layout = ({ children }) => {
               title="Follow the creator on Twitter"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-0.5 text-gray-800 hover:text-blue-600"
+              className="ml-0.5 text-gray-600 hover:text-blue-600"
             >
               @bigwinent
             </a>
           </p>
-          <nav className="flex items-center justify-end space-x-3 md:space-x-6">
+          {/* <nav className="flex items-center justify-end space-x-3 md:space-x-6">
             <Link href="/about">
               <a className="text-gray-800 hover:text-blue-600 p-1 transition text-sm">
                 FAQS
@@ -125,7 +127,7 @@ const Layout = ({ children }) => {
                 Terms of Sale
               </a>
             </Link>
-          </nav>
+          </nav> */}
         </div>
       </footer>
     </>
