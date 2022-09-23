@@ -4,9 +4,13 @@ const Homepage = () => {
     return (
 
         <div style={{overflow: 'hidden', height: '100%', width: '100%'}}>
-          <div className="center mx-20 fixed" style={{zIndex: '101', margin: '0 12%', width: '100vw'}}>
+          <div className="fixed" style={{zIndex: '101',
+            // height: '200px',
+            margin: '5% auto', textAlign: 'center',
+            left: 0,
+            right: 0,}}>
             <Image
-              src="/assets/images/arizona title.png" alt='catch22 cover art' width={250} height={250}
+              src="/assets/images/arizona title.png" alt='catch22 cover art' width={300} height={300}
                 />
           </div>
 

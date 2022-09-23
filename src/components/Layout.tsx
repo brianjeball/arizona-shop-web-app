@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import useWishlistState from "../hooks/useWishlistState";
 import useSnipcartCount from "../hooks/useSnipcartCount";
@@ -10,12 +11,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <header className="py-6 fixed" style={{zIndex: '100', width: '100%;'}}>
+      <header className="py-6 fixed w-full z-100">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center justify-between">
 
             <div className="md:w-1/3">
-              <nav className="flex items-center justify-start space-x-3 md:space-x-6">
+            <Image
+              src="/jb-logo-white-cropped.png" alt='catch22 cover art' width={300} height={80}
+                />
+              {/* <nav className="flex items-center justify-start space-x-3 md:space-x-6">
                 <Link href="/about">
                   <a className="text-white hover:text-blue-600 p-1 transition">
                     About
@@ -26,7 +30,7 @@ const Layout = ({ children }) => {
                     Terms of Sale
                   </a>
                 </Link>
-              </nav>
+              </nav> */}
             </div>
 
             <div className="md:w-1/3 flex items-center justify-end space-x-3 -mr-2.5">
@@ -91,23 +95,23 @@ const Layout = ({ children }) => {
           <p className="text-gray-600 text-sm">
             Powered by
             <a
-              href="https://headlessdropshipping.com"
+              href="https://www.bigwinmm.com"
               title="Learn more about how this site was made"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-0.5 text-gray-800 hover:text-blue-600"
             >
-              Headless Dropshipping Starter
+              Big Win Multimedia
             </a>
             , Built by{" "}
             <a
-              href="https://twitter.com/notrab"
+              href="https://instagram.com/bigwinent"
               title="Follow the creator on Twitter"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-0.5 text-gray-800 hover:text-blue-600"
             >
-              @notrab
+              @bigwinent
             </a>
           </p>
           <nav className="flex items-center justify-end space-x-3 md:space-x-6">
