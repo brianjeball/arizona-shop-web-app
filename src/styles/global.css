@@ -13,6 +13,7 @@ body {
 
 .snipcart-modal__container {
     z-index: 200 !important;
+    color: black !important;
 }
 
 a {
